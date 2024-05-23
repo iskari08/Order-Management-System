@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles for the input when focused */
+input[type="email"]:focus ~ .input-text {
+    @apply text-blue-500 transform -translate-y-6 -translate-x-2 scale-75;
+  }
+
+  /* Styles for the input text when not focused */
+  input[type="email"]:not(:focus) ~ .input-text {
+    @apply text-gray-500 transform -translate-y-6 -translate-x-2 scale-75;
+  }
+
+  /* Styles for the input placeholder when not focused */
+  input[type="email"]:not(:focus):placeholder-shown ~ .input-text {
+    @apply transform translate-y-0 translate-x-0 scale-100;
+  }
+
+  input[type="password"]:focus ~ .input-text {
+    @apply text-blue-500 transform -translate-y-6 -translate-x-2 scale-75;
+  }
+
+  /* Styles for the input text when not focused */
+  input[type="password"]:not(:focus) ~ .input-text {
+    @apply text-gray-500 transform -translate-y-6 -translate-x-2 scale-75;
+  }
+
+  /* Styles for the input placeholder when not focused */
+  input[type="password"]:not(:focus):placeholder-shown ~ .input-text {
+    @apply transform translate-y-0 translate-x-0 scale-100;
+  }
+
+  /* Styles for the input when focused */
+  input[type="text"]:focus ~ .input-text {
+    @apply text-blue-500 transform -translate-y-6 -translate-x-2 scale-75;
+  }
+
+  /* Styles for the input text when not focused */
+  input[type="text"]:not(:focus) ~ .input-text {
+    @apply text-gray-500 transform -translate-y-6 -translate-x-2 scale-75;
+  }
+
+  /* Styles for the input placeholder when not focused */
+  input[type="text"]:not(:focus):placeholder-shown ~ .input-text {
+    @apply transform translate-y-0 translate-x-0 scale-100;
+  }
